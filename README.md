@@ -35,7 +35,7 @@ Works across Android, iOS, Web, Window, and Linux.
 
 
 ## Basic Example
-
+```
 int currentIndex = 0;
 
 LiquidToggleBar(
@@ -46,6 +46,7 @@ LiquidToggleBar(
   tabColor: Colors.purple,
   onSelectionUpdated: (index) => setState(() => currentIndex = index),
 ),
+```
 
 See example tab for more detail
 
