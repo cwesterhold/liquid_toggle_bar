@@ -7,3 +7,5 @@
 [0.3.0] - Improve code documentation and other score improvement measures
 
 [0.4.0] - Improve code documentation and other score improvement measures
+
+[1.0.0] - Ready for production use
