@@ -7,21 +7,17 @@ import 'package:flutter/widgets.dart';
 
 class LiquidToggleBar extends StatefulWidget {
   final Color backgroundColor;
-  final BoxBorder backgroundBorder;
   final Color selectedTabColor;
-
   final Color tabColor;
   final Color selectedTextColor;
   final Color textColor;
   final List<String> tabsNames;
   final Function(int) onSelectionUpdated;
-
   final double borderRadius;
 
   LiquidToggleBar(
       {@required this.tabsNames,
       this.backgroundColor = Colors.grey,
-      this.backgroundBorder,
       this.selectedTabColor = Colors.orangeAccent,
       this.tabColor = Colors.orange,
       this.selectedTextColor = Colors.white,
@@ -39,7 +35,6 @@ class _LiquidToggleBarState extends State<LiquidToggleBar> {
   LinkedHashMap<String, bool> _hashMap = LinkedHashMap();
   int _selectedIndex = 0;
   PageController _controller = PageController(initialPage: 0, viewportFraction: .6);
-  bool _initAnimationOver = false;
 
   @override
   void initState() {

@@ -1,8 +1,7 @@
 name: liquid_toggle_bar
 description: A new Flutter package.
 version: 0.1.0
-author:  Liquidsoft
-homepage: Liquidsoft.io
+homepage: https://liquidsoft.io
 
 environment:
   sdk: ">=2.7.0 <3.0.0"

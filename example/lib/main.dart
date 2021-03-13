@@ -50,7 +50,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 width: MediaQuery.of(context).size.width * .95,
                 child: LiquidToggleBar(
                   tabsNames: tabsNames,
-                  //borderRadius: 0,
+                  borderRadius: 8,
                   backgroundColor: Colors.grey,
                   selectedTabColor: Theme.of(context).primaryColor,
                   tabColor: Theme.of(context).accentColor,
