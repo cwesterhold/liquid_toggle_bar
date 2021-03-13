@@ -11,14 +11,8 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.2
-  liquid_toggle_bar:
-    git:
-      url: https://github.com/cwesterhold/liquid_toggle_bar
-      ref: master
+  liquid_toggle_bar: ^0.4.0
 
- # dont reference the git in production
- #use below instead
- # liquid_toggle_bar: ^0.1.0
 
 dev_dependencies:
   flutter_test:

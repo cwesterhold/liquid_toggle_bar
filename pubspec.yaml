@@ -1,5 +1,5 @@
 name: liquid_toggle_bar
-description: Flutter/Dart Tab interface with horizontal scrolling customizable color stying and borders.
+description: Horizontal tab interface capable of handing any number of inputs.  Easily customize colors with an easy to use set of attributes.
 version: 0.4.0
 homepage: https://liquidsoft.io
 

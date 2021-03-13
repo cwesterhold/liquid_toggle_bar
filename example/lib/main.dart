@@ -42,22 +42,17 @@ class _MyHomePageState extends State<MyHomePage> {
           children: [
             Padding(
               padding: const EdgeInsets.only(top: 28.0),
-              child: Text("Liquid Toggle Bar Example",
-                  style: TextStyle(fontSize: 20)),
+              child: Text("Liquid Toggle Bar Example", style: TextStyle(fontSize: 20)),
             ),
             Padding(
-              padding: const EdgeInsets.only(top: 18.0),
-              child: Container(
-                width: MediaQuery.of(context).size.width * .95,
-                child: LiquidToggleBar(
-                  tabsNames: tabsNames,
-                  borderRadius: 8,
-                  backgroundColor: Colors.grey,
-                  selectedTabColor: Theme.of(context).primaryColor,
-                  tabColor: Theme.of(context).accentColor,
-                  onSelectionUpdated: (index) =>
-                      setState(() => currentIndex = index),
-                ),
+              padding: const EdgeInsets.all(18.0),
+              child: LiquidToggleBar(
+                tabsNames: tabsNames,
+                borderRadius: 8,
+                backgroundColor: Colors.grey,
+                selectedTabColor: Theme.of(context).primaryColor,
+                tabColor: Theme.of(context).accentColor,
+                onSelectionUpdated: (index) => setState(() => currentIndex = index),
               ),
             ),
             Expanded(child: screenList[currentIndex]),
@@ -72,9 +67,14 @@ class ScreenOne extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: Text(
-        ' - Screen One - ',
-        style: TextStyle(fontSize: 25),
+      child: Column(
+        children: [
+          Text(
+            ' - Screen One - ',
+            style: TextStyle(fontSize: 25),
+          ),
+          Icon(Icons.email)
+        ],
       ),
     );
   }
@@ -84,9 +84,14 @@ class ScreenTwo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: Text(
-        ' - Screen Two - ',
-        style: TextStyle(fontSize: 25),
+      child: Column(
+        children: [
+          Text(
+            ' - Screen Two - ',
+            style: TextStyle(fontSize: 25),
+          ),
+          Icon(Icons.flag)
+        ],
       ),
     );
   }
@@ -96,9 +101,14 @@ class ScreenThree extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: Text(
-        ' - Screen Three - ',
-        style: TextStyle(fontSize: 25),
+      child: Column(
+        children: [
+          Text(
+            ' - Screen Three - ',
+            style: TextStyle(fontSize: 25),
+          ),
+          Icon(Icons.ac_unit)
+        ],
       ),
     );
   }
