@@ -52,11 +52,13 @@ class LiquidToggleBar extends StatefulWidget {
 class _LiquidToggleBarState extends State<LiquidToggleBar> {
   LinkedHashMap<String, bool> _hashMap = LinkedHashMap();
   int _selectedIndex = 0;
-  PageController _controller = PageController(initialPage: 0, viewportFraction: .6);
+  PageController _controller =
+      PageController(initialPage: 0, viewportFraction: .6);
 
   @override
   void initState() {
-    _hashMap = LinkedHashMap.fromIterable(widget.tabsNames, value: (value) => value = false);
+    _hashMap = LinkedHashMap.fromIterable(widget.tabsNames,
+        value: (value) => value = false);
     _hashMap[widget.tabsNames[0]] = true;
 
     super.initState();
@@ -68,7 +70,8 @@ class _LiquidToggleBarState extends State<LiquidToggleBar> {
       builder: (context, constraints) {
         return Card(
           elevation: 6,
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(widget.borderRadius)),
+          shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(widget.borderRadius)),
           color: widget.backgroundColor,
           child: Container(
             height: 50,
@@ -83,7 +86,8 @@ class _LiquidToggleBarState extends State<LiquidToggleBar> {
                     if (_controller.hasClients)
                       {
                         _controller.animateToPage(_selectedIndex,
-                            duration: Duration(milliseconds: 400), curve: Curves.ease),
+                            duration: Duration(milliseconds: 400),
+                            curve: Curves.ease),
                         _updateSelection(_selectedIndex)
                       }
                   },
@@ -97,9 +101,7 @@ class _LiquidToggleBarState extends State<LiquidToggleBar> {
                     decoration: BoxDecoration(
                       color: _hashMap.values.elementAt(index)
                           ? widget.selectedTabColor
-                          : widget.tabColor != null
-                              ? widget.tabColor
-                              : null,
+                          : widget.tabColor != null ? widget.tabColor : null,
                       borderRadius: BorderRadius.circular(widget.borderRadius),
                     ),
                     child: Center(
