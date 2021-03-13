@@ -6,15 +6,33 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
 class LiquidToggleBar extends StatefulWidget {
+  ///The background color of the card holding tabs;
   final Color backgroundColor;
+
+  ///The background color of the active tab
   final Color selectedTabColor;
+
+  ///The background color of any shown inactive tabs;
   final Color tabColor;
+
+  /// The text color of the active tab;
   final Color selectedTextColor;
+
+  /// The text color of the inactive tabs
   final Color textColor;
+
+  /// List of names of the tabs to be shown inside of the card
+  /// for example - ['tabOne','tabTwo','tabThree']
   final List<String> tabsNames;
+
+  /// Call back function on changing tabs
+  /// this is an int - representing the index of the tabsNames list
   final Function(int) onSelectionUpdated;
+
+  /// radius of the card corners
   final double borderRadius;
 
+  /// this is the main class to call.
   LiquidToggleBar(
       {@required this.tabsNames,
       this.backgroundColor = Colors.grey,

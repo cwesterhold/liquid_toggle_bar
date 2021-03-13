@@ -1,6 +1,6 @@
 name: liquid_toggle_bar
-description: A new Flutter package.
-version: 0.1.0
+description: Flutter/Dart Tab interface with horizontal scrolling customizable color stying and borders.
+version: 0.3.0
 homepage: https://liquidsoft.io
 
 environment:
