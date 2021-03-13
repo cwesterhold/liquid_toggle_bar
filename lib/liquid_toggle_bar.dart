@@ -107,7 +107,7 @@ class _LiquidToggleBarState extends State<LiquidToggleBar> {
                         onTap: () => setState(
                           () => {
                             _updateSelection(index),
-                            _controller.animateToPage(_selectedIndex,
+                            _controller.animateToPage(index,
                                 duration: Duration(milliseconds: 400), curve: Curves.ease),
                           },
                         ),

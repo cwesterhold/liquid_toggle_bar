@@ -70,10 +70,12 @@ packages:
   liquid_toggle_bar:
     dependency: "direct main"
     description:
-      name: liquid_toggle_bar
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "0.4.0"
+      path: "."
+      ref: master
+      resolved-ref: "6d6d1b2d21616aabb13e1be5636e2221f5622f13"
+      url: "https://github.com/cwesterhold/liquid_toggle_bar"
+    source: git
+    version: "1.0.0"
   matcher:
     dependency: transitive
     description:
