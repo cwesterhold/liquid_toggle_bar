@@ -106,9 +106,13 @@ class _LiquidToggleBarState extends State<LiquidToggleBar> {
                       child: GestureDetector(
                         onTap: () => setState(
                           () => {
-                            _updateSelection(index),
-                            _controller.animateToPage(index,
-                                duration: Duration(milliseconds: 400), curve: Curves.ease),
+                            _selectedIndex = index,
+                            if (_controller.hasClients)
+                              {
+                                _controller.animateToPage(_selectedIndex,
+                                    duration: Duration(milliseconds: 400), curve: Curves.ease),
+                                _updateSelection(_selectedIndex)
+                              }
                           },
                         ),
                         child: Text(
