@@ -1,5 +1,8 @@
 
-#Liquid Toggle Bar
+Liquid Toggle Bar
+
+![Screenshot_1615594687](https://user-images.githubusercontent.com/43251690/111011918-a566aa00-8360-11eb-90c8-8af9efff85b3.png)
+
 
 #Install
 Add to your pubspec.yaml
@@ -7,7 +10,6 @@ Add to your pubspec.yaml
 
 Import into your dart file
     import 'package:liquid_toggle_bar/liquid_toggle_bar.dart';
-    
     
     
 #Example
