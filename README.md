@@ -9,12 +9,12 @@ Use Liquid Toggle Bar for an easy customizable tab interface.
 
 Add 
 
-### Prerequisites
+## Prerequisites
 
 Works across Android, iOS, Web, Window, and Linux.
 
 
-### Attributes
+## Attributes
 
    Color backgroundColor - The background color of the card holding tabs 
    
@@ -34,7 +34,7 @@ Works across Android, iOS, Web, Window, and Linux.
    
 
 
-### Basic Example
+## Basic Example
 
 int currentIndex = 0;
 
