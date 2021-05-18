@@ -1,10 +1,10 @@
 name: liquid_toggle_bar
 description: Horizontal tab interface capable of handing any number of inputs.  Easily customize colors with an easy to use set of attributes.
-version: 1.0.1
+version: 1.2.0
 homepage: https://liquidsoft.io
 
 environment:
-  sdk: ">=2.7.0 <3.0.0"
+  sdk: ">=2.12.0 <3.0.0"
   flutter: ">=1.17.0"
 
 dependencies:

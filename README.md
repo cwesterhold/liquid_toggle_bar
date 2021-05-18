@@ -1,5 +1,7 @@
 # Liquid Toggle Bar
 
+***This is now included in a larger component library, liquidsoft_components***
+
 ![Screenshot_1615594687](https://user-images.githubusercontent.com/43251690/111011918-a566aa00-8360-11eb-90c8-8af9efff85b3.png)
 
 

@@ -42,7 +42,8 @@ class _MyHomePageState extends State<MyHomePage> {
           children: [
             Padding(
               padding: const EdgeInsets.only(top: 28.0),
-              child: Text("Liquid Toggle Bar Example", style: TextStyle(fontSize: 20)),
+              child: Text("Liquid Toggle Bar Example",
+                  style: TextStyle(fontSize: 20)),
             ),
             Padding(
               padding: const EdgeInsets.all(18.0),
@@ -52,7 +53,8 @@ class _MyHomePageState extends State<MyHomePage> {
                 backgroundColor: Colors.grey,
                 selectedTabColor: Theme.of(context).primaryColor,
                 tabColor: Theme.of(context).accentColor,
-                onSelectionUpdated: (index) => setState(() => currentIndex = index),
+                onSelectionUpdated: (index) =>
+                    setState(() => currentIndex = index),
               ),
             ),
             Expanded(child: screenList[currentIndex]),
